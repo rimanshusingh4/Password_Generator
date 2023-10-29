@@ -34,6 +34,7 @@ function App() {
   const copyPassToClip= useCallback(() => {
     passRef.current?.select()
     passRef.current?.setSelectionRange(0,49);
+    window.alert("Copied!")
     window.navigator.clipboard.writeText(pass);
   })
   return (
