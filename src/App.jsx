@@ -38,8 +38,8 @@ function App() {
     window.navigator.clipboard.writeText(pass);
   })
   return (
-    <>
-      <h1>Password Generator.</h1>
+    <div className='border-double  border-x-8 bg-gray-800	 rounded-3xl border-red-600	p-12'>
+      <h1 className='pb-8'>Password Generator.</h1>
       <div className='flex shadow rounded-lg overflow-hidden mb-4 mt-4'>
         <input type='text'
         value={pass}
@@ -83,9 +83,7 @@ function App() {
           <label>Character</label>
         </div>
       </div>
-      
-      
-    </>
+    </div>
   )
 }
 
